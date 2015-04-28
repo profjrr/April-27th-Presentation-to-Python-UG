@@ -1,15 +1,19 @@
 ### Begin Ifs in Python:
 ##
 ### Python ifs presented by Professor Reed
-### last updated (20-APR-2015)
+### last updated (24-APR-2015)
 ### for Python 3.4+
 ### Featured Speaker -- Python User Group -- Apr. 2015
 ##
 ##
 ##import string
+### NOW WITH ASSERTS!!! ###
+import pytest
 
 def simpleIf(x):
     print("Demo Simple IF Demo*: ")
+    print("x is:, ",x)
+    assert(x < 99)
     if x < 0:
         print("simple if test ran:", x)
         print("x is less than 0")
@@ -44,12 +48,12 @@ def elseIf(x):
 
 def elIf2(x):
     print("**** Demo ELIF2 Demo ****: ")
-    if x < 0:
+    if x < -1:
         print("with else elseif:", x)
         print("x is less than 0")
     elif x == 0:
         print("elif x is equal to zero")
-    elif x > 0:
+    elif x >0 and x <= 1:
         print("final elif x is greater than a negative value not ZERO!")
     else:
         print("otherwise, not a proper value of x?")
@@ -73,28 +77,29 @@ def testMyIfs(x):
     print()
     ##
     simpleIf(x)     ## first demo   -- simple if test
-    ifWithElse(x)  ## second demo -- if/else test
-    elseIf(x)       ## third demo   -- if/elif/else test
-    elIf2(x)        ### final test or otherwise ###
+##    ifWithElse(x)  ## second demo -- if/else test
+##    elseIf(x)       ## third demo   -- if/elif/else test
+##    elIf2(x)        ### final test or otherwise ###
     print()
 
 ### Testing values and area follow: ##
 ##
 print("[negative value test1:]")    
-x = -1
+##x = -1
+x = 101
 testMyIfs(x)
-print("[zero value test2:]")
-x = 0
-testMyIfs(x)
-print("[positive value test3:]")
-x = 1
-testMyIfs(x)
-##
-print("[otherwise x invalid value TEST#4:]")
-x = 999
-print(x)
-
-testMyIfs(x)
+##print("[zero value test2:]")
+##x = 0
+##testMyIfs(x)
+##print("[positive value test3:]")
+##x = 1
+##testMyIfs(x)
+####
+####
+##print("[otherwise x invalid value TEST#4:]")
+##x = 999
+##print(x)
+##testMyIfs(x)
 ##
 ### note: the test driver area above is a replacement for main()
 ##    

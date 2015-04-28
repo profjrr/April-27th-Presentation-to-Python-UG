@@ -1,7 +1,9 @@
 ### Begin Ifs in Python:
 ##
+## PgmID: part1run3
+##
 ### Python ifs presented by Professor Reed
-### last updated (20-APR-2015)
+### last updated (26-APR-2015)
 ### for Python 3.4+
 ### Featured Speaker -- Python User Group -- Apr. 2015
 ##
@@ -49,10 +51,15 @@ def elIf2(x):
         print("x is less than 0")
     elif x == 0:
         print("elif x is equal to zero")
+    elif x == 1:
+        print("final elif x is equal to 1")
+    elif x < 1:
+        print("final elif x is less than 1")
     elif x > 0:
-        print("final elif x is greater than a negative value not ZERO!")
+        print("final elif x is greater than a negative value not ZERO!")     
     else:
         print("otherwise, not a proper value of x?")
+##        
     print("end of Demo***: ")
     print ("===> DOES meet NASA/JPL Stds, YES, but better!!! <===")
     print()         
@@ -80,21 +87,24 @@ def testMyIfs(x):
 
 ### Testing values and area follow: ##
 ##
-print("[negative value test1:]")    
-x = -1
-testMyIfs(x)
-print("[zero value test2:]")
-x = 0
-testMyIfs(x)
+##print("[negative value test1:]")
+##x = -1
+##testMyIfs(x)
+#### neg value test
+####
+##print("[zero value test2:]")
+##x = 0
+##testMyIfs(x)
+##
 print("[positive value test3:]")
 x = 1
 testMyIfs(x)
-##
-print("[otherwise x invalid value TEST#4:]")
-x = 999
-print(x)
-
-testMyIfs(x)
+####
+####
+##print("[otherwise x invalid value TEST#4:]")
+##x = 999
+##print(x)
+##testMyIfs(x)
 ##
 ### note: the test driver area above is a replacement for main()
 ##    
